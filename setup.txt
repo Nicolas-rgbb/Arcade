@@ -1,0 +1,2 @@
+https://retropie.org.uk/download/
+lav en mappe i /home/retropie/roms/ports

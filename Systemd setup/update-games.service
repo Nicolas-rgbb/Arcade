@@ -1,0 +1,14 @@
+[Unit]
+Description=Update Web Games
+After=network-online.target
+Wants=network-online.target
+
+
+[Service]
+ExecStart=/home/specialminds/webgames/update-games.sh
+StandardOutput=append:/home/specialminds/webgames/update-games.log
+StandardError=append:/home/specialminds/webgames/update-games.log
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

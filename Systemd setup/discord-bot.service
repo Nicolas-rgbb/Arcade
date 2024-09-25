@@ -1,0 +1,16 @@
+[Unit]
+Description=Discord GitHub Bot
+After=network-online.target
+Wants=network-online.target
+
+
+[Service]
+Type=simple
+User=specialminds
+WorkingDirectory=/home/specialminds/discord-bot
+ExecStart=/home/specialminds/discord-bot-env/bin/python3 /home/specialminds/discord-bot/discord_bot.py
+Restart=always
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target

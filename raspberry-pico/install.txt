@@ -1,0 +1,3 @@
+1) Install CircutPython
+2) Install adafruit_hid library
+3) copy boot.py og code.py til pico
